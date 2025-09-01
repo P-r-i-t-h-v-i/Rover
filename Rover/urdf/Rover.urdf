@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Rover">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0150546907286868 -0.283392114189935 0.29968731948345"
+        rpy="0 0 0" />
+      <mass
+        value="2.34759592693503" />
+      <inertia
+        ixx="0.029674640240319"
+        ixy="1.66552410346759E-08"
+        ixz="4.93691536998708E-08"
+        iyy="0.0155302069570009"
+        iyz="-4.63940097416551E-09"
+        izz="0.0155302060276331" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="chassis_link_1">
+    <inertial>
+      <origin
+        xyz="5.67752567667834E-08 -7.50847315919567E-09 0.225000029977437"
+        rpy="0 0 0" />
+      <mass
+        value="0.410430097030497" />
+      <inertia
+        ixx="0.00705793382376491"
+        ixy="4.22623146558338E-10"
+        ixz="-2.31977484743533E-09"
+        iyy="0.00705640614879542"
+        iyz="3.50078314614505E-11"
+        izz="0.000210358543028732" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/chassis_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/chassis_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_joint1"
+    type="fixed">
+    <origin
+      xyz="0.015055 -0.028392 0.074687"
+      rpy="0 0 1.5654" />
+    <parent
+      link="base_link" />
+    <child
+      link="chassis_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="chassis_link_2">
+    <inertial>
+      <origin
+        xyz="5.67752564961665E-08 -7.50847342113892E-09 0.225000029977437"
+        rpy="0 0 0" />
+      <mass
+        value="0.410430097030498" />
+      <inertia
+        ixx="0.00705793382376492"
+        ixy="4.22623146493963E-10"
+        ixz="-2.3197748378935E-09"
+        iyy="0.00705640614879543"
+        iyz="3.50078394219153E-11"
+        izz="0.000210358543028732" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/chassis_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/chassis_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_joint_2"
+    type="fixed">
+    <origin
+      xyz="0.015055 -0.50839 0.55469"
+      rpy="-1.5708 -1.5464 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="chassis_link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="chassis_link_3">
+    <inertial>
+      <origin
+        xyz="5.67752567182112E-08 -7.5084734714459E-09 0.225000029977437"
+        rpy="0 0 0" />
+      <mass
+        value="0.410430097030497" />
+      <inertia
+        ixx="0.00705793382376491"
+        ixy="4.22623146527845E-10"
+        ixz="-2.31977484768387E-09"
+        iyy="0.00705640614879542"
+        iyz="3.50078409396336E-11"
+        izz="0.000210358543028732" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/chassis_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/chassis_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_joint_3"
+    type="fixed">
+    <origin
+      xyz="0.015055 -0.53839 0.074687"
+      rpy="0 0 -1.5769" />
+    <parent
+      link="base_link" />
+    <child
+      link="chassis_link_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="chassis_link_4">
+    <inertial>
+      <origin
+        xyz="5.67752567737223E-08 -7.5084734714459E-09 0.225000029977437"
+        rpy="0 0 0" />
+      <mass
+        value="0.410430097030497" />
+      <inertia
+        ixx="0.0070579338237649"
+        ixy="4.22623146521068E-10"
+        ixz="-2.3197748477071E-09"
+        iyy="0.00705640614879541"
+        iyz="3.50078409705271E-11"
+        izz="0.000210358543028732" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/chassis_link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/chassis_link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="chassis_joint_4"
+    type="fixed">
+    <origin
+      xyz="0.015055 -0.058392 0.044687"
+      rpy="-1.5708 1.5629 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="chassis_link_4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="connector_link_1">
+    <inertial>
+      <origin
+        xyz="-1.90819582357449E-17 0.0209705010372951 -0.0640294989627049"
+        rpy="0 0 0" />
+      <mass
+        value="0.17646888470326" />
+      <inertia
+        ixx="0.000362253633031466"
+        ixy="3.70654572477765E-20"
+        ixz="-3.76153637418014E-20"
+        iyy="0.000248405578808851"
+        iyz="8.18802897658648E-05"
+        izz="0.000248405578808851" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/connector_link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/connector_link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="connector_joint_1"
+    type="fixed">
+    <origin
+      xyz="0.015055 -0.11339 0.55469"
+      rpy="-1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="connector_link_1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="connector_link_2">
+    <inertial>
+      <origin
+        xyz="8.50014503228635E-17 0.020970501037295 -0.0640294989627049"
+        rpy="0 0 0" />
+      <mass
+        value="0.17646888470326" />
+      <inertia
+        ixx="0.000362253633031467"
+        ixy="-1.00839692757114E-19"
+        ixz="1.51088819580407E-19"
+        iyy="0.000248405578808852"
+        iyz="8.18802897658648E-05"
+        izz="0.000248405578808851" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/connector_link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/connector_link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="connector_joint_2"
+    type="fixed">
+    <origin
+      xyz="0.015055 -0.45339 0.55469"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="connector_link_2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="connector_link_3">
+    <inertial>
+      <origin
+        xyz="1.73472347597681E-18 0.0209705010372951 -0.0640294989627049"
+        rpy="0 0 0" />
+      <mass
+        value="0.17646888470326" />
+      <inertia
+        ixx="0.000362253633031467"
+        ixy="1.91350521646029E-20"
+        ixz="-8.41998159658864E-21"
+        iyy="0.000248405578808851"
+        iyz="8.18802897658646E-05"
+        izz="0.000248405578808851" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/connector_link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/connector_link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="connector_joint_3"
+    type="fixed">
+    <origin
+      xyz="0.015055 -0.45339 0.044687"
+      rpy="1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="connector_link_3" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="connector_link_4">
+    <inertial>
+      <origin
+        xyz="1.73472347597681E-18 0.0209705010372951 -0.0640294989627049"
+        rpy="0 0 0" />
+      <mass
+        value="0.17646888470326" />
+      <inertia
+        ixx="0.000362253633031467"
+        ixy="1.82977202245832E-20"
+        ixz="-8.66488585172545E-21"
+        iyy="0.000248405578808851"
+        iyz="8.18802897658647E-05"
+        izz="0.000248405578808851" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/connector_link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Rover/meshes/connector_link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="connector_joint_4"
+    type="fixed">
+    <origin
+      xyz="0.015055 -0.11339 0.044687"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="connector_link_4" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
